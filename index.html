@@ -48,11 +48,33 @@
         font-size: 14px;
         margin-left: 20px;
       }
+
+      .management-journal {
+        background-color: rgba(255, 215, 0, 0.2); /* Lighter gold */
+        color: #000;
+        padding: 2px 5px;
+        border-radius: 3px;
+        font-weight: bold;
+        margin-left: 5px;
+      }
+
+      .ml-venue {
+        background-color: rgba(135, 206, 235, 0.2); /* Lighter blue */
+        color: #000;
+        padding: 2px 5px;
+        border-radius: 3px;
+        font-weight: bold;
+        margin-left: 5px;
+      }
+
+      /* Add spacing between list items */
+      ol li {
+        margin-bottom: 10px;
+      }
     </style>
   </head>
 
   <body>
-
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -109,17 +131,24 @@
 
       <dl class='dl-horizontal'>
         <font face="sans-serif"> 
+        <div class="container">
           <h3>Updates</h3>
-
           <div class="news-category">Papers</div>
-          <ul>
-              <li class="news-item"> My paper with Junyu Cao on Adaptive Data Acquisition for Personalized Recommender Systems with Optimality Guarantees on Short-form Video Platform was accepted to <b>Management Science</b> in May 2024. </li>
-              <li class="news-item"> My paper on Can LLMs Mimic Human-Like Mental Accounting and Behavioral Biases? was accepted to <b>ACM Conference on Economics and Computation (EC'24)</b> in May 2024. </li>
-              <li class="news-item"> My paper with Xue Yu, Muchen Li, and Renjie Liao on Learning Latent Structures in Network Games via Data-Dependent Gated-Prior Graph Variational Autoencoders was accepted to <b>International Conference on Machine Learning (ICML)</b> in April 2024.</li>
-              <li class="news-item"> My paper with Drew Dimmery on <a href="https://pubsonline.informs.org/doi/abs/10.1287/isre.2021.0343">Calibrating Heterogeneous Treatment Effects in Randomized Experiments</a> was accepted to <b>Information Systems Research</b> in October 2023. </li>
-              <li class="news-item"> My paper with Tara Sowrirajan and Alex Pentland on <a href="https://ieeexplore.ieee.org/document/10164026">Stochastic Block Influence Model: Measuring Social Influence Among Homophilous Communities</a> was accepted to <b>IEEE Transactions on Knowledge and Data Engineering</b> in July 2023. </li>
-              <li class="news-item"> My paper with Xiaowen Dong, Esteban Moro, and Alex Pentland on <a href="https://pubsonline.informs.org/doi/abs/10.1287/isre.2023.1231">Long Range Social Influence in Phone Communication Networks on Offline Adoption Decisions</a> was accepted to <b>Information Systems Research</b> in March 2023. </li>
-          </ul>
+          <ol>
+            <li class="news-item">My paper with Junyu Cao on Adaptive Data Acquisition for Personalized Recommender Systems with Optimality Guarantees on Short-form Video Platform was accepted to <b>Management Science</b> 
+              <span class="management-journal">Management Journal</span></li>
+            <li class="news-item">My paper on Can LLMs Mimic Human-Like Mental Accounting and Behavioral Biases? was accepted to <b>ACM Conference on Economics and Computation (EC'24)</b>
+              <span class="ml-venue">Computer Science Venue</span></li>
+            <li class="news-item">My paper with Xue Yu, Muchen Li, and Renjie Liao on Learning Latent Structures in Network Games via Data-Dependent Gated-Prior Graph Variational Autoencoders was accepted to <b>International Conference on Machine Learning (ICML)</b>
+              <span class="ml-venue">Computer Science Venue</span></li>
+            <li class="news-item">My paper with Drew Dimmery on <a href="https://pubsonline.informs.org/doi/abs/10.1287/isre.2021.0343">Calibrating Heterogeneous Treatment Effects in Randomized Experiments</a> was accepted to <b>Information Systems Research</b>
+              <span class="management-journal">Management Journal</span></li>
+            <li class="news-item">My paper with Tara Sowrirajan and Alex Pentland on <a href="https://ieeexplore.ieee.org/document/10164026">Stochastic Block Influence Model: Measuring Social Influence Among Homophilous Communities</a> was accepted to <b>IEEE Transactions on Knowledge and Data Engineering</b>
+              <span class="ml-venue">Computer Science Venue</span></li>
+            <li class="news-item">My paper with Xiaowen Dong, Esteban Moro, and Alex Pentland on <a href="https://pubsonline.informs.org/doi/abs/10.1287/isre.2023.1231">Long Range Social Influence in Phone Communication Networks on Offline Adoption Decisions</a> was accepted to <b>Information Systems Research</b>
+              <span class="management-journal">Management Journal</span></li>
+          </ol>
+        </div>
 
           <div class="news-category">Teaching Awards</div>
           <ul>
@@ -155,6 +184,5 @@
     <!-- Bootstrap core JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://cdn.kik.com/kik/1.0.9/kik.js"></script>
   </body>
 </html>
