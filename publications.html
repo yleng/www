@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151190366-1"></script>
     <script>
@@ -10,6 +13,7 @@
 
       gtag('config', 'UA-151190366-1');
     </script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,7 +29,26 @@
     <!-- Custom styles for this template -->
     <link href="css/starter-template.css" rel="stylesheet">
     <style>
-      /* Make links black instead of blue */
+      /* Apply Google Fonts */
+      body {
+        font-family: 'Lato', sans-serif;
+      }
+      h3, h4 {
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+      }
+
+      /* Styling for author names, paper titles, and journal names */
+      .author-name {
+        color: #333333; /* Dark gray for author names */
+      }
+      .paper-title {
+        color: #555555; /* Medium gray for paper titles */
+      }
+      .journal-name {
+        color: #777777; /* Lighter gray for journal names */
+      }
+
       a {
         color: black;
         text-decoration: none;
@@ -35,14 +58,6 @@
       }
 
       /* Label and tag styles */
-      .label {
-        font-weight: bold;
-        color: #4CAF50;
-      }
-      .tag {
-        font-style: italic;
-        color: #555;
-      }
       .management-journal {
         background-color: rgba(255, 215, 0, 0.2); /* Lighter gold */
         color: #000;
@@ -59,6 +74,27 @@
         font-weight: bold;
         margin-left: 5px;
       }
+    .label-wp {
+      background-color: #ccc; /* Light gray for WP */
+      color: #000;
+      padding: 2px 5px;
+      border-radius: 3px;
+      font-weight: bold;
+      margin-right: 5px;
+      font-size: 0.9em; /* Ensures consistent font size */
+      display: inline-block;
+    }
+
+    .label-pub {
+      background-color: #87CEEB; /* Light blue for PUB */
+      color: #000;
+      padding: 2px 5px;
+      border-radius: 3px;
+      font-weight: bold;
+      margin-right: 5px;
+      font-size: 0.9em; /* Ensures consistent font size */
+      display: inline-block;
+    }
       /* Add spacing between list items */
       ol li {
         margin-bottom: 10px;
@@ -97,30 +133,33 @@
 
         <h3>Human-Centric Interpretability in Generative AI</h3>
         <ol>
-          <li> <b>Leng, Y.</b> & Yuan, Y. <a href="https://arxiv.org/abs/2312.15198">Do LLM Agents Exhibit Social Behaviors?</a> Major revision at <i>Information Systems Research</i><span class="management-journal">Management Journal</span>.</li>
-          <li> <b>Leng, Y.</b> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4705130">Can LLMs Mimic Human-Like Mental Accounting and Behavioral Biases?</a> Reject & resubmit at <i>Marketing Science</i><span class="management-journal">Management Journal</span>.</li>
-          <li> <b>Leng, Y.</b>, Sang, Y., & Agarwal, A. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4802019">Reduce Preference Disparity Between LLMs and Humans: Calibration to Compose Human-like Ensembles</a>. Major revision at <i>Marketing Science</i><span class="management-journal">Management Journal</span>.</li>
+          <li><span class="label-wp">WP</span><span class="author-name">Leng, Y.</span> & <span class="author-name">Yuan, Y.</span> <a href="https://arxiv.org/abs/2312.15198" class="paper-title">Do LLM Agents Exhibit Social Behaviors?</a> <br> Major Revision at <span class="journal-name"><i>Information Systems Research</i></span><span class="management-journal">Management Journal</span>.</li>
+          <li><span class="label-wp">WP</span><span class="author-name">Leng, Y.</span> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4705130" class="paper-title">Can LLMs Mimic Human-Like Mental Accounting and Behavioral Biases?</a> <br> Reject & Resubmit at <span class="journal-name"><i>Marketing Science</i></span><span class="management-journal">Management Journal</span>.</li>
+          <li><span class="label-wp">WP</span><span class="author-name">Leng, Y.</span>, <span class="author-name">Sang, Y.</span>, & <span class="author-name">Agarwal, A.</span> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4802019" class="paper-title">Reduce Preference Disparity Between LLMs and Humans: Calibration to Compose Human-like Ensembles</a> <br> Major Revision at <span class="journal-name"><i>Marketing Science</i></span><span class="management-journal">Management Journal</span>.</li>
+          <li><span class="label-wp">WP</span><span class="author-name">Sang, Y.</span>, <span class="author-name">Leng, Y.</span>, & <span class="author-name">Agarwal, A.</span> User Perception Through LLM: A Theory-driven HyperGraph Framework for Marketing Content Generation <br> <span class="journal-name"><i>Best Paper Award at the 2024 INFORMS Data Science Workshop</i></span>.</li>
         </ol>
               
-        <h3>Machine Learning on Networks</h3>
+        <h3>Networks-Based Machine/Deep Learning</h3>
         <ol>
-          <li> Cao, J. & <b>Leng, Y.</b> (equal contribution). <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3843086">Adaptive Acquisition Tree for Recommendations with Optimality Guarantees on Short-form Video Platforms</a>. Accepted to <i>Management Science</i><span class="management-journal">Management Journal</span>.</li>
-          <li> Yu, X., Li, M., <b>Leng, Y.</b>, & Liao, R. (2024). <a href="https://openreview.net/pdf?id=kKWjZoaRLv">Learning Latent Structures in Network Games via Data-Dependent Gated-Prior Graph Variational Autoencoders</a>. <i>International Conference on Machine Learning (ICML)</i><span class="ml-venue">Computer Science Venue</span>.</li> 
-          <li> Wang, B., <b>Leng, Y.</b>, Wang, G., Wang, Y. <a href="https://arxiv.org/abs/2405.05786">FusionTransNet for Smart Urban Mobility: Spatiotemporal Traffic Forecasting Through Multimodal Network Integration.</a> Major revision at <i>Management Science</i><span class="management-journal">Management Journal</span>.</li>
-          <li> <b>Leng, Y.</b>, Liu, X., & Ruiz R. Interpretable Recommendations and User-Centric Explanations with Geometric Deep Learning. Major revision at <i>Information Systems Research</i><span class="management-journal">Management Journal</span>.</li>
-          <li> Rossi E., Monti F., <b>Leng, Y.</b>, Bronstein M., and Dong X. (2022). <a href="https://proceedings.mlr.press/v162/rossi22a/rossi22a.pdf">Learning to Infer Structure of Network Games</a>. <i>International Conference on Machine Learning (ICML)</i><span class="ml-venue">Computer Science Venue</span>.</li>
-          <li> <b>Leng, Y.</b>, Sowrirajan, T., & Pentland, A. (2023). <a href="https://ieeexplore.ieee.org/document/10164026">Interpretable Stochastic Block Influence Model: Measuring Social Influence Among Homophilous Communities</a>. <i>IEEE Transactions on Knowledge and Data Engineering</i><span class="ml-venue">Computer Science Venue</span>.</li>      
-          <li> <b>Leng, Y.</b>, Dong, X., Wu. J., & Pentland, A. (2020). <a href="http://proceedings.mlr.press/v119/leng20a/leng20a.pdf">Learning Quadratic Games on Networks</a>. <i>International Conference on Machine Learning (ICML)</i><span class="ml-venue">Computer Science Venue</span>.</li>
+          <li><span class="label-pub">PUB</span><span class="author-name">Leng, Y.</span> & <span class="author-name">Dimmery, D.</span> (2024). <a href="https://pubsonline.informs.org/doi/abs/10.1287/isre.2021.0343" class="paper-title">Calibration of Heterogeneous Treatment Effect in Randomized Experiments</a> <br><span class="journal-name"><i>Information Systems Research (2024)</i></span><span class="management-journal">Management Journal</span>.</li>
+          <li><span class="label-pub">PUB</span><span class="author-name">Cao, J.</span> & <span class="author-name">Leng, Y.</span> (equal contribution). <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3843086" class="paper-title">Adaptive Acquisition Tree for Recommendations with Optimality Guarantees on Short-form Video Platforms</a> <br> Accepted to <span class="journal-name"><i>Management Science</i></span><span class="management-journal">Management Journal</span>. <br> Second prize in Data-Driven Research Challenge in INFORMS/Revenue Management & Pricing (2021)</li>
+          <li><span class="label-pub">PUB</span><span class="author-name">Yu, X.</span>, <span class="author-name">Li, M.</span>, <span class="author-name">Leng, Y.</span>, & <span class="author-name">Liao, R.</span> <a href="https://openreview.net/pdf?id=kKWjZoaRLv" class="paper-title">Learning Latent Structures in Network Games via Data-Dependent Gated-Prior Graph Variational Autoencoders</a> <br> <span class="journal-name"><i>International Conference on Machine Learning [ICML] (2024)</i></span><span class="ml-venue">Computer Science Venue</span>.</li> 
+          <li><span class="label-wp">WP</span><span class="author-name">Wang, B.</span>, <span class="author-name">Leng, Y.</span>, <span class="author-name">Wang, G.</span>, <span class="author-name">Wang, Y.</span> <a href="https://arxiv.org/abs/2405.05786" class="paper-title">FusionTransNet for Smart Urban Mobility: Spatiotemporal Traffic Forecasting Through Multimodal Network Integration</a> <br> Major Revision at <span class="journal-name"><i>Management Science</i></span><span class="management-journal">Management Journal</span>.</li>
+          <li><span class="label-wp">WP</span><span class="author-name">Leng, Y.</span>, <span class="author-name">Liu, X.</span>, & <span class="author-name">Ruiz, R.</span> Interpretable Recommendations and User-Centric Explanations with Geometric Deep Learning <br> Major Revision at <span class="journal-name"><i>Information Systems Research</i></span><span class="management-journal">Management Journal</span>.</li>
+          <li><span class="label-pub">PUB</span><span class="author-name">Leng, Y.</span>, <span class="author-name">Sowrirajan, T.</span>, & <span class="author-name">Pentland, A.</span> <a href="https://ieeexplore.ieee.org/document/10164026" class="paper-title">Interpretable Stochastic Block Influence Model: Measuring Social Influence Among Homophilous Communities</a> <br> <span class="journal-name"><i>IEEE Transactions on Knowledge and Data Engineering (2023) </i></span><span class="ml-venue">Computer Science Venue</span>.</li>
+          <li><span class="label-pub">PUB</span><span class="author-name">Rossi, E.</span>, <span class="author-name">Monti, F.</span>, <span class="author-name">Leng, Y.</span>, <span class="author-name">Bronstein, M.</span>, and <span class="author-name">Dong, X.</span> <a href="https://proceedings.mlr.press/v162/rossi22a/rossi22a.pdf" class="paper-title">Learning to Infer Structure of Network Games</a> <br> <span class="journal-name"><i>International Conference on Machine Learning [ICML] (2022)</i></span><span class="ml-venue">Computer Science Venue</span>.</li>
+          <li><span class="label-pub">PUB</span><span class="author-name">Leng, Y.</span>, <span class="author-name">Dong, X.</span>, <span class="author-name">Wu, J.</span>, & <span class="author-name">Pentland, A.</span> <a href="http://proceedings.mlr.press/v119/leng20a/leng20a.pdf" class="paper-title">Learning Quadratic Games on Networks</a> <br> <span class="journal-name"><i>International Conference on Machine Learning  [ICML] (2020)</i></span><span class="ml-venue">Computer Science Venue</span>.</li>
+          <li><span class="label-wp">WP</span><span class="author-name">Cao, J.</span> & <span class="author-name">Leng, Y.</span> (equal contribution). Learning to Optimize Data Quality for Crowdsourcing Labor Markets: A Human-Algorithm-Collaborative Framework<br> <span class="journal-name"><i>INFORMS ISS Cluster Best Paper Award, 2021.</i></span></li>
+
         </ol>
 
-        <h3>Spillover on Networks</h3>
+        <h3>Network Spillovers and Dynamics</h3>
         <ol>
-          <li> <b>Leng, Y.</b> & Dimmery, D. (2024). <a href="https://pubsonline.informs.org/doi/abs/10.1287/isre.2021.0343">Calibration of Heterogeneous Treatment Effect in Randomized Experiments</a>. <i>Information Systems Research</i><span class="management-journal">Management Journal</span>.</li>
-          <li> <b>Leng, Y.</b>, Dong, X., Moro, E., & Pentland, A. (2023). <a href="https://pubsonline.informs.org/doi/10.1287/isre.2023.1231">Long Range Social Influence in Phone Communication Networks on Offline Adoption Decisions</a>. <i>Information Systems Research</i><span class="management-journal">Management Journal</span>.</li>
-          <li> <b>Leng, Y.</b> & Agarwal, A. Are Spatial Neighbors Complements or Substitutes? Discovering a Visits-based Local Market Structure. Reject & resubmit at <i>Marketing Science</i><span class="management-journal">Management Journal</span>.</li>
-          <li> Lera, S. & <b>Leng, Y.</b> (equal contribution) <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4708802">Beyond Pairwise Network Interactions: Implications for Information Centrality</a>. Major revision at <i>Information Systems Research</i><span class="management-journal">Management Journal</span>.</li>
-          <li> Jeong, J., Chan, J., <b>Leng, Y.</b>, and Guo, Y. The Role of Network Centrality in Predicting Work Performance. Major revision at <i>Information Systems Research</i><span class="management-journal">Management Journal</span>.</li>
-        </ol>
+          <li><span class="label-pub">PUB</span><span class="author-name">Leng, Y.</span>, <span class="author-name">Dong, X.</span>, <span class="author-name">Moro, E.</span>, & <span class="author-name">Pentland, A.</span> <a href="https://pubsonline.informs.org/doi/10.1287/isre.2023.1231" class="paper-title">Long Range Social Influence in Phone Communication Networks on Offline Adoption Decisions</a> <br> <span class="journal-name"><i>Information Systems Research (2023)</i></span><span class="management-journal">Management Journal</span>.</li>
+          <li><span class="label-wp">WP</span><span class="author-name">Leng, Y.</span> & <span class="author-name">Agarwal, A.</span> Are Spatial Neighbors Complements or Substitutes? Discovering a Visits-based Local Market Structure <br> Reject & Resubmit at <span class="journal-name"><i>Marketing Science</i></span><span class="management-journal">Management Journal</span>.</li>
+          <li><span class="label-wp">WP</span><span class="author-name">Lera, S.</span> & <span class="author-name">Leng, Y.</span> (equal contribution) <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4708802" class="paper-title">Beyond Pairwise Network Interactions: Implications for Information Centrality</a> <br> Major Revision at <span class="journal-name"><i>Information Systems Research</i></span><span class="management-journal">Management Journal</span>.</li>
+          <li><span class="label-wp">WP</span><span class="author-name">Jeong, J.</span>, <span class="author-name">Chan, J.</span>, <span class="author-name">Leng, Y.</span>, & <span class="author-name">Guo, Y.</span> The Role of Network Centrality in Predicting Work Performance <br> Major Revision at <span class="journal-name"><i>Information Systems Research</i></span><span class="management-journal">Management Journal</span>.</li>
+      </ol>
 
       </div><!-- /.container -->
     </div>
